@@ -91,7 +91,12 @@ export default class InfiniteScroll extends Component {
     } = this.state;
 
     return (
-      <div>
+      <div
+      style={{
+        overflow:"auto",
+        width:"500px"
+      }}
+      >
         <h1>Infinite Users!</h1>
         <p>Scroll down to load more!!</p>
         {users.map(user => (
